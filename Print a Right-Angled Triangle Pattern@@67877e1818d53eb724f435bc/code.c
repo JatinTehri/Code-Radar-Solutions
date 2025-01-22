@@ -4,7 +4,7 @@ int main() {
     int n;
     scanf("%d",&n);
     for(int i=0;i<n;i++){
-        for (int j=0;j< 2n-2i;j++){
+        for (int j=0;j < i;j++){
             printf("* ");
         }
     printf("\n");
@@ -13,4 +13,4 @@ int main() {
 }
 // i=0,*   2n-2i
 // i=1,* *    
-// 
+// i=2, ***
