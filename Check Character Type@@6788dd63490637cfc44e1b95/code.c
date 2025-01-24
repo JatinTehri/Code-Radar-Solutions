@@ -25,7 +25,7 @@ int main() {
         printf("Digit");
         break;
     }
-    else{
+    if(!((ch>=97 && ch<=122) || (ch>=65 && ch<=90) || (ch>=48 && ch<=57))){
         printf("Special Character");
     }
     return 0;
