@@ -9,5 +9,8 @@ int main() {
     else if(price[0]<price[1]){
         printf("Profit");
     }
+    else{
+        printf("No Profit No Loss");
+    }
     return 0;
 }
