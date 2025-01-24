@@ -21,5 +21,12 @@ int main() {
         }
         break;
     }
+    while(ch>=48 && ch<=57){
+        printf("Digit");
+        break;
+    }
+    else{
+        printf("Special Character");
+    }
     return 0;
 }
