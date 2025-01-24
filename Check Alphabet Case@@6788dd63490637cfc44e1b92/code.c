@@ -3,7 +3,7 @@
 int main() {
     char n;
     scanf("%c",&n);
-    if(n>=97 && n<=122){
+    if(n>=a && n<=z){
         printf("Lowercase");
     }
     else{
