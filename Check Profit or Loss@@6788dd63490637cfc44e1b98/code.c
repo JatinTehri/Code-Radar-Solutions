@@ -6,7 +6,7 @@ int main() {
     if(price[0]>price[1]){
         printf("Loss");
     }
-    else{
+    else if(price[0]<price[1]){
         printf("Profit");
     }
     return 0;
