@@ -13,8 +13,11 @@ int main() {
     else if(op == '/'){
         printf("%d",num[0] / num[1]);
     }
-    else{
+    else if(op == '*'){
         printf("%d",num[0] * num[1]);
+    }
+    else{
+        printf("error");
     }
     
     return 0;
