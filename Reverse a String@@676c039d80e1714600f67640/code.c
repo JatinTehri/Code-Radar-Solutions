@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<string.h>
 
-char rev_str(char str[]){
+void rev_str(char str[]){
     int len = strlen(str);
     
         for(int i=0;i < len/2; i++){
@@ -9,7 +9,7 @@ char rev_str(char str[]){
             str[i] = str[len-i-1];
             str[len-i-1] = temp;
         }
-        return str;
+        
     }
     
 
@@ -17,7 +17,8 @@ char rev_str(char str[]){
 int main() {
     char str[100];
     scanf("%s",str);
-    printf("%s",rev_str(str));
+    rev_str(str);
+    printf("%s",str);
 
     return 0;
 }
