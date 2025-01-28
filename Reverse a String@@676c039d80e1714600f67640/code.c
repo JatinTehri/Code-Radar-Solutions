@@ -11,8 +11,6 @@ void rev_str(char str[]){
         }
         
     }
-    
-
 
 int main() {
     char str[100];
