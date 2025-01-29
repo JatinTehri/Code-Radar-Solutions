@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include<string.h>
 
+int vowel_counter(char str[]);
+
 int vowel_counter(char str[]){
     int len = strlen(str);
     int count = 0;
