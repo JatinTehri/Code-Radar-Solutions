@@ -11,15 +11,15 @@ int main() {
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
         struct Student si;
-        break;
+        
     }
     for(int i=1;i<=n;i++){
         scanf("%d %s %.2f",&si.roll_number,&si.name,&si.marks);
-        break;
+        
     }
     for(int i=1;i<=n;i++){
         printf("Roll Number: %d, Name: %s, Marks: %.2f",si.roll_number,si.name,si.marks);
-        break;
+        
     }
 
     return 0;
