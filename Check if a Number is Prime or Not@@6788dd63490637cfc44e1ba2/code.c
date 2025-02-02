@@ -11,15 +11,14 @@ int main() {
 
     else{
         
-        for(int i=2;i<=n;i++){ 
-            if(n!=2){
+        for(int i=2;i<n;i++){ 
 
-                else if(n%i==0){
+            else if(n%i==0){
                 printf("Not Prime");
                 is_prime = 0;
                 break;
         }
-            }
+            
         else{
             is_prime =  1;
         }
