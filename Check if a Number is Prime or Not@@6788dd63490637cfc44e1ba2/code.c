@@ -13,7 +13,7 @@ int main() {
         
         for(int i=2;i<n;i++){ 
 
-            else if(n%i==0){
+            if(n%i==0){
                 printf("Not Prime");
                 is_prime = 0;
                 break;
