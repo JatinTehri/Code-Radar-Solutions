@@ -11,7 +11,10 @@ int main() {
     else{
         
         for(int i=2;i<n;i++){ 
-            if(n%i==0){
+            if(n==2){
+                printf("Prime");
+            }
+            else if(n%i==0){
                 printf("Not Prime");
                 is_prime = 0;
                 break;
