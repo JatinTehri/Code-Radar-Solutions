@@ -8,12 +8,13 @@ int main() {
     if(n<=0 || n==1){
         printf("Not Prime");
     }
+    else if(n==2){
+         printf("Prime");
+     }
+
     else{
         
         for(int i=2;i<n;i++){ 
-            if(n==2){
-                printf("Prime");
-            }
             else if(n%i==0){
                 printf("Not Prime");
                 is_prime = 0;
@@ -24,6 +25,7 @@ int main() {
         }
     }
     }
+    
     if(is_prime){
         printf("Prime");
     }
