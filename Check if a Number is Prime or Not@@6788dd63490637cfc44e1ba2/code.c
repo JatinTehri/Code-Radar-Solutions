@@ -25,7 +25,7 @@ int main() {
     }
     }
 
-    if(is_prime){
+    else if(is_prime){
         printf("Prime");
     }
     return 0;
