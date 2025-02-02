@@ -8,10 +8,6 @@ int main() {
     if(n<=0 || n==1){
         printf("Not Prime");
     }
-    else if(n==2){
-         printf("Prime");
-         is_prime = 1;
-     }
 
     else{
         
