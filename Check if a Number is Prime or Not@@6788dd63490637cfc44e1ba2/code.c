@@ -10,6 +10,7 @@ int main() {
     }
     else if(n==2){
          printf("Prime");
+         is_prime = 1;
      }
 
     else{
