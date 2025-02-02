@@ -3,12 +3,13 @@
 int main() {
     int n;
     scanf("%d",&n);
+    int is_prime;
 
     if(n<=0 || n==1){
         printf("Not Prime");
     }
     else{
-        int is_prime;
+        
         for(int i=2;i<n;i++){ 
             if(n%i==0){
                 printf("Not Prime");
