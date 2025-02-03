@@ -9,7 +9,7 @@ struct Student{
 int main() {
     int n;
     scanf("%d",&n);
-    struct s[n];
+    struct Student s[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&s[i].roll_number,&s[i].name,&s[i].marks);
     }
