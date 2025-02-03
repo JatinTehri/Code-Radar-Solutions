@@ -12,6 +12,7 @@ int main() {
     struct s[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %.2f",&s[i].roll_number,&s[i].name,&s[i].marks);
+        scanf("%c",'\n');
     }
     
     int top_scorer_index = 0;
