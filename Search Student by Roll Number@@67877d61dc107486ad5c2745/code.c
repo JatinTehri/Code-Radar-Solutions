@@ -18,7 +18,7 @@ int main() {
     if(req_student <= N){
         printf("Roll Number: %d, Name: %s, Marks: %.2f",S[req_student].roll_number,S[req_student].name,S[req_student].marks);
     }else{
-        printf("Student not  found");
+        printf("Student not found");
     }
     return 0;
 }
