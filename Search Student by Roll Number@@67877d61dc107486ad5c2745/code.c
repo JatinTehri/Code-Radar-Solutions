@@ -18,9 +18,10 @@ int main() {
     for(int i=1;i<=N;i++){
         if(req_student == i ){
             printf("Roll Number: %d, Name: %s, Marks: %.2f",S[req_student].roll_number,S[req_student].name,S[req_student].marks);
-        }else{
-            printf("Student not found");
         }
     }
+    else{
+            printf("Student not found");
+        }
     return 0;
 }
