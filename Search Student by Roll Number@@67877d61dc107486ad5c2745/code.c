@@ -16,12 +16,13 @@ int main() {
     }
     scanf("%d",&req_student);
     for(int i=1;i<=N;i++){
-        if(req_student == i ){
-            printf("Roll Number: %d, Name: %s, Marks: %.2f",S[req_student].roll_number,S[req_student].name,S[req_student].marks);
-        }
-        else if(req_student != i){
+        if(req_student != i){
             printf("Student not found");
         }
+        else if(req_student == i ){
+            printf("Roll Number: %d, Name: %s, Marks: %.2f",S[req_student].roll_number,S[req_student].name,S[req_student].marks);
+        }
+        
     }         
         
     return 0;
