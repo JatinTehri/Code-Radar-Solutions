@@ -15,10 +15,12 @@ int main() {
         scanf("%d %s %f",&S[i].roll_number,&S[i].name,&S[i].marks);
     }
     scanf("%d",&req_student);
-    if(req_student <= S[req_student].roll_number){
-        printf("Roll Number: %d, Name: %s, Marks: %.2f",S[req_student].roll_number,S[req_student].name,S[req_student].marks);
-    }else{
-        printf("Student not found");
+    for(int i=1;i<=N;i++){
+        if(req_student <= S[i].roll_number){
+            printf("Roll Number: %d, Name: %s, Marks: %.2f",S[req_student].roll_number,S[req_student].name,S[req_student].marks);
+        }else{
+            printf("Student not found");
+        }
     }
     return 0;
 }
