@@ -11,7 +11,7 @@ int main() {
     scanf("%d",&N);
     int req_student;
     struct Student S[N];
-    for(int i=0;i<N;i++){
+    for(int i=1;i<=N;i++){
         scanf("%d %s %f",&S[i].roll_number,&S[i].name,&S[i].marks);
     }
     scanf("%d",&req_student);
