@@ -21,6 +21,6 @@ int main() {
             count++;
         }
     }
-    printf("Count of students above %.2f: %d",threshold,count);
+    printf("Count of students above %f: %d",threshold,count);
     return 0;
 }
