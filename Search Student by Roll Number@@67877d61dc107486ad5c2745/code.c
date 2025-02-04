@@ -16,7 +16,7 @@ int main() {
     }
     scanf("%d",&req_student);
     int found;
-    for(int i=1;i<=N;i++){
+    for(int i=1;i<N+1;i++){
         if(S[i].roll_number == req_student){
             printf("Roll Number: %d, Name: %s, Marks: %.2f",S[req_student].roll_number,S[req_student].name,S[req_student].marks);
             found = 1;
