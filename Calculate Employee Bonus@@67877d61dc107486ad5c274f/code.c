@@ -3,7 +3,7 @@
 typedef struct Employee{
     int employee_id;
     char name[10];
-    long int salary;
+    int salary;
 }emp;
 
 int main() {
@@ -11,7 +11,7 @@ int main() {
     scanf("%d",&N);
     emp E[N];
     for(int i=0;i<N;i++){
-        scanf("%d %s %ld",&E.employee_id[i],&E.name[i],&E.salary[i]);
+        scanf("%d %s %d",&E.employee_id[i],&E.name[i],&E.salary[i]);
     }
     float bonus[N];
     for(int i=0;i<N;i++){
