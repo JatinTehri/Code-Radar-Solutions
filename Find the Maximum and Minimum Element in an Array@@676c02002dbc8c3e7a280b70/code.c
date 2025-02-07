@@ -3,10 +3,10 @@
 
 int main() {
     int n;
-    scanf("%d",n);
+    scanf("%d",&n);
     int arr[n];
     for (int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+        scanf("%d ",&arr[i]);
     }
     int min_element = arr[0];
     int min_element_index = 0;
