@@ -16,7 +16,14 @@ int is_even(int arr[],int n){
     
 }
 int is_odd(int arr[],int n){
-     
+     for(int i=0;i<n;i++){
+        if(!(arr[i]%2==0)){
+            odd++;
+        }
+        else{
+            even++;
+        }
+    }
     return odd;
 }
 int main() {
