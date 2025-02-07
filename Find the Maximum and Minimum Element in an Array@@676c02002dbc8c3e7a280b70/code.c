@@ -8,15 +8,20 @@ int main() {
     for (int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int min_element = arr[0];
     int min_element_index = 0;
-    int max_element_index = 0;
-    for(int i=1;i<n;i++){
+    
+    for(int i=0;i<n;i++){
         if(arr[i]<arr[min_element_index]){
             min_element_index = i;
         }
     }
-    for(int i=1;i<n;i++){
-        if(arr[i]>arr[max_element_index]){
+
+    int max_element = arr[0];
+    int max_element_index = 0;
+
+    for(int i=0;i<n;i++){
+        if(arr[i] > arr[max_element_index]){
             max_element_index = i;
         }
     }
