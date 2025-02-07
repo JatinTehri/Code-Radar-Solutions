@@ -2,7 +2,7 @@
 
 int isPrime(int n);
 
-int isPrime(int n){
+void isPrime(int n){
     int not_prime;
     if(n == 1 || n == 2){
         not_prime = 1;
@@ -25,6 +25,7 @@ int isPrime(int n){
         return 0;
     }
 }
+
 int main(){
     int t;
     scanf("%d",&t);
