@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int isPrime(int n);
+void isPrime(int n);
 
 void isPrime(int n){
     int not_prime;
