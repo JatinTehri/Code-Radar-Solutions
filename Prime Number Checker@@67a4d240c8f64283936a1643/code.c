@@ -10,19 +10,19 @@ void isPrime(int n){
     else if(n!=2){
         for(int i = 2;i<n;i++){
             if(n%i == 0){
-                not_prime = 1;
+                not_prime = 0;
             }
             else{
-                not_prime = 0;
+                not_prime = 1;
             }
         }
 
     }
-    if(!(not_prime)){
-        return 1;
+    if(not_prime){
+        return 0;
     }
     else{
-        return 0;
+        return 1;
     }
 }
 
