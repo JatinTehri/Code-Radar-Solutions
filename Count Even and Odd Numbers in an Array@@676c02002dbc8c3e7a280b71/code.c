@@ -21,7 +21,7 @@ int main() {
     int N;
     scanf("%d",&N);
     int arr[N];
-    for(int i=-;i<N;i++){
+    for(int i=0;i<N;i++){
         scanf("%d ",&arr[i]);
     }
     printf("%d %d",is_even(arr,N),is_odd(arr,N));
