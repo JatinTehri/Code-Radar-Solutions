@@ -12,7 +12,8 @@ int is_even(int arr[],int n){
             odd++;
         }
     }
-    return even; return odd;
+    return even;
+     return odd;
 }
 // int is_odd(int arr[],int n){
 //     return odd;
