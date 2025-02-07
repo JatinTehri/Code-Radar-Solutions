@@ -1,29 +1,17 @@
 #include<stdio.h>
 
-void isPrime(int n);
+int isPrime(int n);
 
-void isPrime(int n){
-    int not_prime;
-    if(n == 1 || n == 2){
-        not_prime = 1;
+int isPrime(int n){
+    if (n <= 1){
+        return 0; // Not a prime number
     }
-    else if(n!=2){
-        for(int i = 2;i<n;i++){
-            if(n%i == 0){
-                not_prime = 0;
-            }
-            else{
-                not_prime = 1;
-            }
+    for (int i = 2; i <= n/2; i++){
+        if (n % i == 0){
+            return 0; // Not a prime number
         }
-
     }
-    if(not_prime){
-        printf("0") ;
-    }
-    else{
-        printf("1");
-    }
+    return 1; // Prime number
 }
 
 int main(){
