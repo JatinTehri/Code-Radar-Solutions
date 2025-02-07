@@ -16,8 +16,8 @@ int is_even(int arr[],int n){
     
 }
 int is_odd(int arr[],int n){
-     printf(" %d",odd);
-    return 0;
+     
+    return odd;
 }
 int main() {
     int N;
