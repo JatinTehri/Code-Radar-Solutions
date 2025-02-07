@@ -3,11 +3,13 @@
 
 int main() {
     char str[100];
-    scanf("%s",str);
+    gets(str);
     int count = 0;
-    while(str[i]>=33 && str[i]<=127){
-        count++;
-        break;
+    for(int i = 0;i<100;i++){
+        while(str[i] != '\0'){
+            count++;
+            break;
+        }
     }
     printf("%d",count);
     return 0;
