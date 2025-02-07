@@ -19,10 +19,10 @@ void isPrime(int n){
 
     }
     if(not_prime){
-        return 0;
+        printf("0") ;
     }
     else{
-        return 1;
+        printf("1");
     }
 }
 
