@@ -14,3 +14,4 @@ int main() {
     }
     return 0;
 }
+// Important note: Most Significant Bit of positive number is always 0 (in 2s complement) and negative number is 1.
