@@ -15,7 +15,7 @@ int main() {
        scanf("%d %s %f",&S[i].roll_number,&S[i].name,&S[i].marks);
     }
     for(int i=0;i<N;i++){
-       if(S[i].marks > 50){
+       if(S[i].marks > 50.0){
         all_passed = 1;
        }
        else{
