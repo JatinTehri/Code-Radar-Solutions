@@ -21,6 +21,7 @@ int main() {
             printf("Books above price %.2f:\n",(float) (threshold));
             printf("Title: %s, Author: %s, Price: %.2f",B[i].title,B[i].author,(float)(B[i].price));
         }
+        break;
     }
 
     return 0;
