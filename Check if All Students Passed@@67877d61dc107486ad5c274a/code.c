@@ -17,6 +17,7 @@ int main() {
     for(int i=0;i<N;i++){
        if(S[i].marks > 50.0){
         all_passed = 1;
+        break;
        }
        else{
         all_passed = 0;
