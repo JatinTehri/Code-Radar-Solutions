@@ -18,7 +18,8 @@ int main() {
     
     for(int i=0;i<n;i++){
         if(B[i].price > threshold){
-            printf("Books above price %.2f:\nTitle: %s, Author: %s, Price: %.2f",(float) (threshold),B[i].title,B[i].author,(float)(B[i].price));
+            printf("Books above price %.2f:\n",(float) (threshold));
+            printf("Title: %s, Author: %s, Price: %.2f",B[i].title,B[i].author,(float)(B[i].price));
         }
     }
 
