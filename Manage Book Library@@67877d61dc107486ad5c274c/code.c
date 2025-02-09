@@ -11,7 +11,7 @@ int main() {
     scanf("%d",&n);
     struct Book B[n];
     for(int i=0;i<n;i++){
-        scanf("%s %s %d",&B[i].title,&B[i].author,B[i].price);
+        scanf("%s %s %d",&B[i].title,&B[i].author,&B[i].price);
     }
     int threshold;
     scanf("%d",&threshold);
