@@ -9,7 +9,7 @@ struct Student{
 int main() {
     int  N;
     scanf("%d",&N);
-    int all_passed;
+    int all_passed = 1;
     struct Student S[N];
     for(int i=0;i<N;i++){
        scanf("%d %s %f",&S[i].roll_number,&S[i].name,&S[i].marks);
@@ -17,7 +17,6 @@ int main() {
     for(int i=0;i<N;i++){
        if(S[i].marks > 50.0){
         all_passed = 1;
-        break;
        }
        else{
         all_passed = 0;
