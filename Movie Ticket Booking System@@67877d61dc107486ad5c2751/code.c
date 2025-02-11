@@ -6,7 +6,7 @@ struct MovieTicket{
     int ticket_price;
 };
 
-int main{
+int main(){
     int N;
     scanf("%d",&N);
     struct MovieTicket M[N];
