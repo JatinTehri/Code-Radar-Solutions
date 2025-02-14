@@ -11,7 +11,7 @@ int main(){
     scanf("%d",&N);
     struct Student S[N];
     for(int i=0;i<N;i++){
-        scanf("%d %s %f",&S[i].roll_number,&S[i].name,&S[i].marks);
+        scanf("%d %9s %f",&S[i].roll_number,&S[i].name,&S[i].marks);
     }
     for(int i=0;i<N;i++){
         if(S[i].marks >=85){
