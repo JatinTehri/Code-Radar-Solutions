@@ -29,7 +29,7 @@ int main(){
             no_of_Premium_users += 1;
             Premium_revenue += S[i].sub_cost;
         }
-        else{
+        else if(strcmp(S[i].sub_type,"Standard") == 0){
             no_of_Standard_users += 1;
             Standard_revenue += S[i].sub_cost;
         }
