@@ -12,7 +12,7 @@ int main(){
     scanf("%d",&N);
     struct Subscription S[N];
     for(int i=0;i<N;i++){
-        scanf("%9s %9s %.1f",S[i].username,S[i].sub_type,&S[i].sub_cost);
+        scanf("%9s %9s %f",S[i].username,S[i].sub_type,&S[i].sub_cost);
     }
     int no_of_Basic_users = 0;
     int no_of_Premium_users = 0;
