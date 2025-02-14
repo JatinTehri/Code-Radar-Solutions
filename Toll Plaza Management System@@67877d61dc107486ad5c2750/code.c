@@ -23,7 +23,7 @@ int main(){
         else if(V[i].vehicle_type == "Truck"){
             toll_truck += V[i].toll_amount;
         }
-        else{
+        else if(V[i].vehicle_type == "Bike"){
             toll_bike += V[i].toll_amount;
         }
     }
