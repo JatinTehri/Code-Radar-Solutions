@@ -11,7 +11,7 @@ int main(){
     scanf("%d",&N);
     struct Vehicle V[N];
     for(int i=0;i<N;i++){
-        scanf("%9s %9s %d",V[i].vehicle_number,V[i].vehicle_type,&V[i].toll_amount);
+        scanf("%9s %9s %d",&V[i].vehicle_number,&V[i].vehicle_type,&V[i].toll_amount);
     }
     int toll_car = 0;
     int toll_truck = 0;
