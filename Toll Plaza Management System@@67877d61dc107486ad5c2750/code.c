@@ -17,10 +17,10 @@ int main(){
     int toll_truck = 0;
     int toll_bike = 0;
     for(int i=0;i<N;i++){
-        if(V[i].vehicle_type == 'Car'){
+        if(V[i].vehicle_type == "Car"){
             toll_car += 50;
         }
-        else if(V[i].vehicle_type == 'Truck'){
+        else if(V[i].vehicle_type == "Truck"){
             toll_truck += 100;
         }
         else{
