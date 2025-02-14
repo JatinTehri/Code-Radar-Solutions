@@ -23,7 +23,7 @@ int main() {
         }
     }
     for(int i=0;i<N;i++){
-        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",E[i].employee_id,E[i].name,bonus[i]);
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",E[i].employee_id,E[i].name,(float)(bonus[i]));
     }
 
     return 0;
