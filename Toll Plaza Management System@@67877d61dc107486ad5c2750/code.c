@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<string.h>
 struct Vehicle{
      char vehicle_number[10];
      char vehicle_type[10];
@@ -11,19 +11,19 @@ int main(){
     scanf("%d",&N);
     struct Vehicle V[N];
     for(int i=0;i<N;i++){
-        scanf("%9s %9s %d",&V[i].vehicle_number,&V[i].vehicle_type,&V[i].toll_amount);
+        scanf("%9s %9s %d",V[i].vehicle_number,V[i].vehicle_type,&V[i].toll_amount);
     }
     int toll_car = 0;
     int toll_truck = 0;
     int toll_bike = 0;
     for(int i=0;i<N;i++){
-        if(V[i].vehicle_type == "Car"){
+        if(strcmp(V[i].vehicle_type,"Car") == 0){
             toll_car += V[i].toll_amount;
         }
-        else if(V[i].vehicle_type == "Truck"){
+        else if(strcmp(V[i].vehicle_type,"Truck") == 0){
             toll_truck += V[i].toll_amount;
         }
-        else if(V[i].vehicle_type == "Bike"){
+        else {
             toll_bike += V[i].toll_amount;
         }
     }
