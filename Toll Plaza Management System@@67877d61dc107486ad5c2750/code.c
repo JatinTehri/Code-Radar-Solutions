@@ -17,13 +17,13 @@ int main(){
     int toll_truck = 0;
     int toll_bike = 0;
     for(int i=0;i<N;i++){
-        if(V[i].vehicle_type == 'Car'){
+        if(V[i].vehicle_type == "Car"){
             toll_car += V[i].toll_amount;
         }
-        else if(V[i].vehicle_type == 'Truck'){
+        else if(V[i].vehicle_type == "Truck"){
             toll_truck += V[i].toll_amount;
         }
-        else if(V[i].vehicle_type == 'Bike'){
+        else if(V[i].vehicle_type == "Bike"){
             toll_bike += V[i].toll_amount;
         }
     }
