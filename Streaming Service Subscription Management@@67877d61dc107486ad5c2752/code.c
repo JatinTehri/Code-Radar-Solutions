@@ -4,7 +4,7 @@
 struct Subscription{
      char username[10];
      char sub_type[10];
-     int sub_cost;
+     float sub_cost;
 };
 
 int main(){
@@ -12,14 +12,14 @@ int main(){
     scanf("%d",&N);
     struct Subscription S[N];
     for(int i=0;i<N;i++){
-        scanf("%9s %9s %d",S[i].username,S[i].sub_type,&S[i].sub_cost);
+        scanf("%9s %9s %.1f",S[i].username,S[i].sub_type,&S[i].sub_cost);
     }
     int no_of_Basic_users = 0;
     int no_of_Premium_users = 0;
     int no_of_Standard_users = 0;
-    int Basic_revenue = 0;
-    int Premium_revenue = 0;
-    int Standard_revenue = 0;
+    float Basic_revenue = 0;
+    float Premium_revenue = 0;
+    float Standard_revenue = 0;
     for(int i = 0;i<N;i++){
         if(strcmp(S[i].sub_type,"Basic") == 0){
             no_of_Basic_users += 1;
@@ -34,6 +34,6 @@ int main(){
             Standard_revenue += S[i].sub_cost;
         }
     }
-    printf("Basic: %d Users, Revenue: %.2f; Standard: %d Users, Revenue: %.2f; Premium: %d Users, Revenue: %.2f",no_of_Basic_users,(float)(Basic_revenue),no_of_Standard_users,(float)(Standard_revenue),no_of_Premium_users,(float)(Premium_revenue));
+    printf("Basic: %d Users, Revenue: %.2f; Standard: %d Users, Revenue: %.2f; Premium: %d Users, Revenue: %.2f",no_of_Basic_users,Basic_revenue,no_of_Standard_users,Standard_revenue,no_of_Premium_users,Premium_revenue);
     return 0;
 }
