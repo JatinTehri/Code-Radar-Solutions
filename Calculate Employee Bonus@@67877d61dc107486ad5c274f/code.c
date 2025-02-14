@@ -11,19 +11,19 @@ int main() {
     scanf("%d",&N);
     emp E[N];
     for(int i=0;i<N;i++){
-        scanf("%d %s %d",&E.employee_id[i],&E.name[i],&E.salary[i]);
+        scanf("%d %9s %d",&E[i].employee_id,E[i].name,&E[i].salary);
     }
-    float bonus[N];
+    int bonus[N];
     for(int i=0;i<N;i++){
-        if(E.salary[i]<50000){
-            bonus[i] = 0.1 * E.salary[i];
+        if(E[i].salary < 50000){
+            bonus[i] = 0.1 * E[i].salary;
         }
         else{
-            bonus[i] = 0.05 * E.salary[i];
+            bonus[i] = 0.05 * E[i].salary;
         }
     }
     for(int i=0;i<N;i++){
-        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",E.employee_id[i],E.name[i],bonus[i]);
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",E[i].employee_id,E[i].name,bonus[i]);
     }
 
     return 0;
