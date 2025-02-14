@@ -20,7 +20,7 @@ int main() {
             highest_marks = S[i].marks;
             highest_index = i;
         }
-    printf("Roll Number: %d, Name: %s, Marks: %.2f",S[i].roll_number,S[i].name,S[highest_index].marks);
+    printf("Roll Number: %d, Name: %s, Marks: %.2f\n",S[i].roll_number,S[i].name,S[highest_index].marks);
     }
 
     return 0;
