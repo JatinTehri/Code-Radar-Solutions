@@ -31,3 +31,11 @@ int main(){
 
     return 0;
 }
+
+/*the function strcmp() is used to compare two strings character by character. It returns:
+
+0 if the strings are identical
+
+A positive value if the first string is greater than the second string
+
+A negative value if the first string is less than the second string*/
