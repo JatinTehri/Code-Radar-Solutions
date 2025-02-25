@@ -7,11 +7,12 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d ",&arr[i]);
     }
-    int repeated = arr[0];
     for(int i = 1;i<N;i++){
+    int repeated = arr[0];
           if(repeated == arr[i]){
             repeated = arr[i];
           }
+          
           break;
     }
     
