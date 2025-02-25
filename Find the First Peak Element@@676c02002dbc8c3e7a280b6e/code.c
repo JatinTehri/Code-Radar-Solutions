@@ -10,7 +10,7 @@ int main(){
     int high_index = 0;
     int high_element = arr[0];
     for(int i=1;i<N;i++){
-        if(high_element > arr[i]){
+        if(high_element < arr[i]){
             high_element = arr[i];
             high_index = i;
         }
