@@ -8,20 +8,15 @@ int main(){
         scanf("%d ",&arr[i]);
     }
     int repeated = arr[0];
-    int is_repeated = 0;
     for(int i = 0;i<N;i++){
         for(int j = i+1;j<N;j++){
              if(arr[i] == arr[j]){
             repeated = arr[j];
-            is_repeated = 1;
-           }
-           else{
-            is_repeated = 0;
            }
         }
       }
           
-    if(is_repeated){
+    if(repeated){
         printf("%d", repeated);
     } 
     
