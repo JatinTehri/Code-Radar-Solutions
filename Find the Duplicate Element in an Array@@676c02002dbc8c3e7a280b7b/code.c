@@ -12,7 +12,7 @@ int main(){
         if(repeated == arr[i]){
             repeated = arr[i];
         }
-        break;
+        
     }
     printf("%d",repeated);
     return 0;
