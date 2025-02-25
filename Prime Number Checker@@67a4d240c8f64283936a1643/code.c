@@ -9,7 +9,7 @@ int isPrime(int n){
     }
     else{
     for (int i = 2; i < n; i++){
-        if (n!=2 && n % i == 0){
+        if(n!=2 && n % i == 0){
             isprime = 0; // Not a prime number
             break;
         }
