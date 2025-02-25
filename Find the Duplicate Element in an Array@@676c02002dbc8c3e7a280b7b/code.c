@@ -13,9 +13,9 @@ int main(){
             repeated = arr[i];
           }
           
+    printf("%d",repeated);
           break;
     }
     
-    printf("%d",repeated);
     return 0;
 }
