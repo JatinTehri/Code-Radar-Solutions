@@ -18,6 +18,7 @@ int main(){
             printf("%d",i);
             index = i;
         }
+        break;
     }
     printf("%d",index);
     return 0;
