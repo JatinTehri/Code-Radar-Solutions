@@ -26,10 +26,19 @@ int isPrime(int n){
 int main(){
     int t;
     scanf("%d",&t);
-    while(t--){
+    int results[t];
+    for(int i = 0;i<t;i++){
+        int num;
+        scanf("%d",&num);
+        results[i] = isPrime(num);
+    }
+    for(int i = 0;i<t;i++){
+        printf("%d\n",results[i]);
+    }
+   /* while(t--){
         int num;
         scanf("%d",&num);
         printf("%d\n",isPrime(num));
-    }
+    }*/
     return 0;
 }
