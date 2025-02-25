@@ -21,7 +21,7 @@ int main(){
         }
       }
           
-    if(repeated){
+    if(is_repeated){
         printf("%d", repeated);
     } 
     
