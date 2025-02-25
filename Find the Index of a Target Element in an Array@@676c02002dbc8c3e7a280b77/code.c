@@ -19,7 +19,7 @@ int main(){
         else{
             printf("%d",a);
         }
-        break;
+        
     }
     return 0;
 }
