@@ -17,11 +17,11 @@ int isPrime(int n){
     }
     if(isprime){
         return 1;
-        printf("\n");
+        // printf("\n");
     }
     else{
         return 0;
-        printf("\n");
+        // printf("\n");
     }
 }
 
