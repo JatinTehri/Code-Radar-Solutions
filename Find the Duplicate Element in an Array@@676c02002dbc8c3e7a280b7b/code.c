@@ -12,10 +12,15 @@ int main(){
         for(int j = i+1;j<N;j++){
              if(repeated == arr[i]){
             repeated = arr[i];
-          }
+            break;
+           }
+          
         }
-          break;
-    }
+        if(repeated != -1){
+            break;
+        }
+      }
+          
     if(repeated != -1){
         printf("%d\n", repeated);
     } 
