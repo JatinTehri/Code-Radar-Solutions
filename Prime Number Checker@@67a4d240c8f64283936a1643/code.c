@@ -3,17 +3,23 @@
 int isPrime(int n);
 
 int isPrime(int n){
+    int isprime = 1;
     if (n <= 1){
-        return 0; // Not a prime number
+        isprime = 0; // Not a prime number
     }
-    else if(n!=2){
+    else{
     for (int i = 2; i <= n; i++){
-        if (n % i == 0){
-            return 0; // Not a prime number
+        if (n!=2 && n % i == 0){
+            isprime = 0; // Not a prime number
         }
     }
     }
-    return 1; // Prime number
+    if(isprime){
+        return 1;
+    }
+    else{
+        return 0;
+    }
 }
 
 int main(){
