@@ -7,22 +7,23 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d ",&arr[i]);
     }
-    int repeated = -1;
-    for(int i = 1;i<N;i++){
+    int repeated = arr[0];
+    int is_repeated = 0;
+    for(int i = 0;i<N;i++){
         for(int j = i+1;j<N;j++){
-             if(repeated == arr[i]){
-            repeated = arr[i];
+             if(arr[i] == arr[j]){
+            repeated = arr[j];
+            is_repeated = 1;
             break;
            }
-          
-        }
-        if(repeated != -1){
-            break;
+           else{
+            is_repeated = 0;
+           }
         }
       }
           
-    if(repeated != -1){
-        printf("%d\n", repeated);
+    if(repeated){
+        printf("%d", repeated);
     } 
     
     return 0;
