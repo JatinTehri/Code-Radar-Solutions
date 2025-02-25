@@ -14,7 +14,6 @@ int main(){
              if(arr[i] == arr[j]){
             repeated = arr[j];
             is_repeated = 1;
-            
            }
            else{
             is_repeated = 0;
