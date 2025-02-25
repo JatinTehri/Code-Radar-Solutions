@@ -16,6 +16,7 @@ int main(){
     for(int i = 0;i<N;i++){
         if(req_number == arr[i]){
             printf("%d",i);
+            index = i;
         }
     }
     printf("%d",index);
