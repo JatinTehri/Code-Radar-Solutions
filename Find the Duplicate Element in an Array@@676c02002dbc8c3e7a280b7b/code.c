@@ -7,13 +7,8 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d ",&arr[i]);
     }
-    int repeated = arr[0];
-    for(int i=1;i<N;i++){
-        if(repeated == arr[i]){
-            repeated = arr[i];
-        }
-        
-    }
+    int repeated = arr[N-1];
+    
     printf("%d",repeated);
     return 0;
 }
