@@ -17,14 +17,16 @@ int isPrime(int n){
     }
     if(isprime){
         return 1;
+        printf("\n");
     }
     else{
         return 0;
+        printf("\n");
     }
 }
 
 int main(){
-    int t;
+    /*int t;
     scanf("%d",&t);
     int results[t];
     for(int i = 0; i < t; i++){
@@ -34,6 +36,14 @@ int main(){
     }
     for(int i = 0; i < t; i++){
         printf("%d\n", results[i]);
+    }
+    return 0;*/
+    int t;
+    scanf("%d",&t);
+    while(t--){
+        int num;
+        scanf("%d",&num);
+        printf("%d\n",isPrime(num));
     }
     return 0;
 }
