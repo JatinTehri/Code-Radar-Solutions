@@ -20,7 +20,7 @@ int main(){
             int a = -1;
             printf("%d",a);
         }
-        
+        break;
     }
     return 0;
 }
