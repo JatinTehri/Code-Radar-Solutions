@@ -17,10 +17,10 @@ int main(){
         if(req_number == arr[i]){
             printf("%d",i);
         }
-        else if(!(req_number == arr[i])){
+        else{
             printf("%d",a);
+            break;
         }
-        break;
     }
     return 0;
 }
