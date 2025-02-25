@@ -11,13 +11,12 @@ int main(){
     
     int req_number;
     scanf("%d",&req_number);
-
+     int a = -1;
     for(int i = 0;i<N;i++){
         if(req_number == arr[i]){
             printf("%d",i);
         }
         else{
-            int a = -1;
             printf("%d",a);
         }
         break;
