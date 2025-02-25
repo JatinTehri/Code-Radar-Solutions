@@ -16,6 +16,9 @@ int main(){
         if(req_number == arr[i]){
             printf("%d",i);
         }
+        else{
+            printf("%d",-1);
+        }
         
     }
     return 0;
