@@ -13,7 +13,7 @@ int main() {
                 if(i==n){
                     printf("*");
                 }
-                else if(j==1){
+                else if(j==1 && i!=n){
                     printf(" ");
                 }
                 else{
