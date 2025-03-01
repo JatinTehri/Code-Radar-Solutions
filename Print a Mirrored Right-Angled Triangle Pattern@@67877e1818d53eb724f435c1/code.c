@@ -16,7 +16,7 @@ int main() {
                 else if(j==1 && i!=n){
                     printf(" ");
                 }
-                else{
+                else if(j!=1){
                     printf("*");
                 }
             }
