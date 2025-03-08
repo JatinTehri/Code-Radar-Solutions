@@ -10,11 +10,12 @@ int main() {
         for(int k=1;k<=i;k++){
            printf("%d",k);
         }
-        for(int m=1;m<=i-1;m++){
         int a = 1;
+        for(int m=1;m<=i-1;m++){
             printf("%d",a);
             a++;
         }
+            a--;
         printf("\n");
     }
     
