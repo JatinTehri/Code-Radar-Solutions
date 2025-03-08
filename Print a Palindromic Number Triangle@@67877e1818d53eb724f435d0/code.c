@@ -10,8 +10,8 @@ int main() {
         for(int k=1;k<=i;k++){
            printf("%d",k);
         }
-        for(int m=1;m<=i-1;m++){
         int a = i-1;
+        for(int m=1;m<=i-1;m++){
             printf("%d",a);
             a--;
         }
