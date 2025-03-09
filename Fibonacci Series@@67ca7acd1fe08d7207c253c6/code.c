@@ -1,4 +1,4 @@
-void fibo (int n){
+int fibo (int n){
     int arr[n];
     arr[0] = 0;
     arr[1] = 1;
