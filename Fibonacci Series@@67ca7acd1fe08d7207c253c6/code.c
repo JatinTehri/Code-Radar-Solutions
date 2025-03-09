@@ -8,8 +8,6 @@ int fibonacciSeries(int n){
     else{
         return fibonacciSeries(n-1) + fibonacciSeries(n-2);
     }  
-    for (int i = 0; i < n; i++) {  // Loop to print Fibonacci numbers from 0 to n-1 
-        printf("%d ", fibonacciSeries(i)); 
-    } 
+    
     
 }
