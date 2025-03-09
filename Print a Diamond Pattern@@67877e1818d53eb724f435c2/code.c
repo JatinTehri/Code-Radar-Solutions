@@ -13,7 +13,7 @@ int main(){
         printf("\n");
     }
 
-    for (i = n - 1; i >= 1; i--) {
+    for (int i = n - 1; i >= 1; i--) {
         // Print spaces
         for (j = n; j > i; j--) {
             printf(" ");
@@ -25,5 +25,6 @@ int main(){
         printf("\n");
     }
 }
+
     return 0;
 }
