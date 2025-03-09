@@ -2,22 +2,23 @@
 int main(){
     int n;
     scanf("%d",&n);
+    int nsp = n-1;     // no. of spaces
+    int nst = 1;            // no. of stars
+    int ml = n/2 + 1;        // middle line
     for(int i=1;i<=n;i++){
-        for(int j=1;j<=n-i;j++){
+        for(int j=1;j<=nsp;j++){
             printf(" ");
         }
-        for(int j=1;j<=2*i-1;j++){
+        for(int j=1;j<=nst;j++){
             printf("*");
+        } 
+        if(i<ml){
+            nsp--;
+            nst+=2;
         }
-        printf("\n");
-    }
-
-    for(int i=1;i<=n-1;i++){
-        for(int j=1;j<=i;j++){
-            printf(" ");
-        }
-        for(int j=1;j<=n-i;j++){
-            printf("*");
+        else if(i>ml){
+            nsp++;
+            nst-=2;
         }
         printf("\n");
     }
