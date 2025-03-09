@@ -27,6 +27,7 @@ int main(){
          }
          nsp2++;
          nst2-=2;
+         printf("\n");
     }
     return 0;
 }
