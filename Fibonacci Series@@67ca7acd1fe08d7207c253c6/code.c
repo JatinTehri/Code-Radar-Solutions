@@ -1,12 +1,15 @@
 int fibonacciSeries(int n){
-    int arr[n];
-    arr[0] = 0;
-    arr[1] = 1;
-    for(int i=2;i<n;i++){
-        arr[i] = fibonacciSeries(n-1) + fibonacciSeries(n-2);
+  if(n == 0){
+        return 0;
     }
-    for(int j=0;j<n;j++){
-        printf("%d ",arr[j]);
+    else if(n == 1){
+        return 1;
     }
+    else{
+        return fibonacciSeries(n-1) + fibonacciSeries(n-2);
+    }  
+    for (int i = 0; i < n; i++) {  // Loop to print Fibonacci numbers from 0 to n-1 
+        printf("%d ", fibonacci_series(i)); 
+    } 
     
 }
