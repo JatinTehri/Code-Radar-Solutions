@@ -10,6 +10,7 @@ int main(){
         }
         else{
             count++;
+            break;
         }
         printf("%d",count);
     }
