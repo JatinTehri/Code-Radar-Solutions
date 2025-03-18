@@ -1,7 +1,3 @@
-
-
-int isPrime(int n);
-
 int isPrime(int n){
     int isprime = 1;
     if (n <= 1){
