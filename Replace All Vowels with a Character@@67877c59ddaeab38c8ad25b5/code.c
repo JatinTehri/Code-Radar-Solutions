@@ -12,7 +12,7 @@ int main(){
         else if(str[i] == 97 || str[i] == 101 || str[i] == 105 || str[i] == 111 || str[i] == 117){
             str[i] = ch;
         }
-        break;
+        
     }
     for(int i=0;i<5;i++){
         printf("%c",str[i]);
