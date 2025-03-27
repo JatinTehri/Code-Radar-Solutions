@@ -1,7 +1,10 @@
 #include<stdio.h>
 
 void is_sorted(int arr[],int n){
-    int cpy[n] = arr[];
+    int cpy[n];
+    for(int k=0;k<n;k++){
+        cpy[k] = arr[i];
+    }
     for(int i=1;i<=n-1;i++){
         for(int j=0;j<n;j++){
             if(arr[j] > arr[j+1]){
