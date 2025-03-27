@@ -3,7 +3,7 @@
 void is_sorted(int arr[],int n){
     int cpy[n];
     for(int k=0;k<n;k++){
-        cpy[k] = arr[i];
+        cpy[k] = arr[k];
     }
     for(int i=1;i<=n-1;i++){
         for(int j=0;j<n;j++){
