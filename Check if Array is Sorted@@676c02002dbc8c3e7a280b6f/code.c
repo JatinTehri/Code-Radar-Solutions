@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 void is_sorted(int arr[],int n){
-    int cpy[n] = arr[n];
+    int cpy[n] = arr[];
     for(int i=1;i<=n-1;i++){
         for(int j=0;j<n;j++){
             if(arr[j] > arr[j+1]){
@@ -11,7 +11,7 @@ void is_sorted(int arr[],int n){
             }
         }
     }
-    if(cpy[n] == arr[n]){
+    if(cpy[] == arr[]){
         printf("Sorted");
     }
     else{
