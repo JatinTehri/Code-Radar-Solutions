@@ -5,8 +5,9 @@ void is_sorted(int arr[],int n){
     for(int k=0;k<n;k++){
         cpy[k] = arr[k];
     }
+    
     for(int i=1;i<=n-1;i++){
-        for(int j=0;j<n;j++){
+        for(int j=0;j<n-1;j++){
             if(arr[j] > arr[j+1]){
                 int temp = arr[j];
                 arr[j] = arr[j+1];
@@ -30,6 +31,5 @@ int main(){
         scanf("%d ",&arr[i]);
     }
      is_sorted(arr,n);
-
     return 0;
 }
