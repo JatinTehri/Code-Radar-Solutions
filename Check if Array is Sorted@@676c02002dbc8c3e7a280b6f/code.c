@@ -1,35 +1,37 @@
 #include<stdio.h>
 
-void is_sorted(int arr[],int n){
-    int cpy[n];
-    for(int k=0;k<n;k++){
-        cpy[k] = arr[k];
-    }
-    
-    for(int i=1;i<=n-1;i++){
-        for(int j=0;j<n-1;j++){
-            if(arr[j] > arr[j+1]){
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
-        }
-    }
-    if(cpy[] == arr[]){
-        printf("Sorted");
-    }
-    else{
-        printf("Not Sorted");
-    }
-    return;
-}
 int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
+    int clone[n];
     for(int i=0;i<n;i++){
-        scanf("%d ",&arr[i]);
+        scanf("%d",&arr[i]);
     }
-     is_sorted(arr,n);
+    for(int i=0;i<n;i++){
+        clone[i] = arr[i];
+    }
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(clone[i]>clone[j]){
+                int temp = clone[i];
+                clone[i] = clone[j];
+                clone[j] = temp; 
+            }
+        }
+    }
+    int sorted = 1;
+    for(int i=0;i<n;i++){
+        int sorted = 0;
+        if(arr[i] == clone[i]){
+            sorted =1;
+        }
+     if(sorted){
+        printf("Sorted");
+     }
+     else{
+        printf("Not Sorted");
+     }
+    }
     return 0;
 }
