@@ -20,7 +20,7 @@ int main(){
             }
         }
     }
-    int sorted = 1;
+    // int sorted = 1;
     for(int i=0;i<n;i++){
         int sorted = 0;
         if(arr[i] == clone[i]){
