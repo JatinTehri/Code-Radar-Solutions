@@ -28,9 +28,11 @@ int main(){
         }
      if(sorted){
         printf("Sorted");
+        break;
      }
      else{
         printf("Not Sorted");
+        break;
      }
     }
     return 0;
