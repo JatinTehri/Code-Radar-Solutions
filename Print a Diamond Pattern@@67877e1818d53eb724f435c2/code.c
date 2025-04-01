@@ -12,12 +12,16 @@ int main(){
         }
         printf("\n");
     }
-
+    int nsp = 1;
     for (int i = n - 1; i >= 1; i--) {
         // Print spaces
-        for (int j = n; j > i; j--) {
+        // for (int j = n; j > i; j--) {
+        //     printf(" ");
+        // }
+        for(int k=1;k<=nsp;k++){
             printf(" ");
         }
+        nsp++;
         // Print stars
         for (int j = 1; j <= (2 * i - 1); j++) {
             printf("*");
