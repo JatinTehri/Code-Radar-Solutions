@@ -20,12 +20,11 @@ int main(){
             smax = arr[i];
         }
     }
-    if(smax<0){
-        printf("-1");
+    if(smax == INT_MIN){
+        printf("-1"); // No valid second maximum
+    } else {
+        printf("%d", smax);
     }
-    else{
-    printf("%d",smax);
-    }
-        
+
     return 0;
 }
