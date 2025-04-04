@@ -20,6 +20,12 @@ int main(){
             smax = arr[i];
         }
     }
+    if(smax<0){
+        printf("-1");
+    }
+    else{
     printf("%d",smax);
+    }
+        
     return 0;
 }
