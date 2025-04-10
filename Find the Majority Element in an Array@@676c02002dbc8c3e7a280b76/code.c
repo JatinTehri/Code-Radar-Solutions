@@ -19,9 +19,7 @@ int main(){
         if(count>n/2){
             printf("%d",repeated);
         }
-        else{
-            printf("-1");
-        }
+        
     }
     return 0;
 }
